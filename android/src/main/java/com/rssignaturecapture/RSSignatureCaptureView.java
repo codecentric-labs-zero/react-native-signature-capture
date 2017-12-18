@@ -359,4 +359,11 @@ public class RSSignatureCaptureView extends View {
 
 		public void onClear();
 	}
+	public void setMinStrokeWidth(int minStrokeWidth) {
+     		mMinWidth = minStrokeWidth;
+     	}
+
+     	public void setMaxStrokeWidth(int maxStrokeWidth) {
+     		mMaxWidth = maxStrokeWidth;
+     	}
 }
