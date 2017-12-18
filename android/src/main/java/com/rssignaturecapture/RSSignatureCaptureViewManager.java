@@ -75,7 +75,7 @@ public class RSSignatureCaptureViewManager extends ViewGroupManager<RSSignatureC
  	public void setPropsMinStrokeWidth(RSSignatureCaptureMainView view, @Nullable int minStrokeWidth) {
  		Log.d("minStrokeWidth:",  ""+minStrokeWidth);
  		if(view!=null){
- 			view.setMinStrokeWidth(minStrokeWidth);
+ 			view.getSignatureView().setMinStrokeWidth(minStrokeWidth)
  		}
  	}
 
@@ -83,7 +83,7 @@ public class RSSignatureCaptureViewManager extends ViewGroupManager<RSSignatureC
  	public void setPropsMaxStrokeWidth(RSSignatureCaptureMainView view, @Nullable int maxStrokeWidth) {
  		Log.d("maxStrokeWidth:",  ""+maxStrokeWidth);
  		if(view!=null){
- 			view.setMaxStrokeWidth(maxStrokeWidth);
+ 			view.getSignatureView().setMaxStrokeWidth(maxStrokeWidth);
  		}
  	}
 

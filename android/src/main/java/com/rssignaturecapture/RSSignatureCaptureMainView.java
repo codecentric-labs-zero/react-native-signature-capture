@@ -73,6 +73,11 @@ public class RSSignatureCaptureMainView extends LinearLayout implements OnClickL
     }
   }
 
+  public RSSignatureCaptureView getSignatureView() {
+
+    return signatureView;
+    }
+
   public void setShowNativeButtons(Boolean showNativeButtons) {
     this.showNativeButtons = showNativeButtons;
     if (showNativeButtons) {
