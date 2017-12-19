@@ -34,8 +34,8 @@ public class RSSignatureCaptureView extends View {
 
 	private boolean mIsEmpty;
 	private OnSignedListener mOnSignedListener;
-	private double mMinWidth;
-	private double mMaxWidth;
+	private float mMinWidth;
+	private float mMaxWidth;
 	private float mLastTouchX;
 	private float mLastTouchY;
 	private float mLastVelocity;
@@ -198,11 +198,11 @@ public class RSSignatureCaptureView extends View {
 		}
 	}
 
-	public void setMinStrokeWidth(double minStrokeWidth) {
+	public void setMinStrokeWidth(float minStrokeWidth) {
 		mMinWidth = minStrokeWidth;
 	}
 
-	public void setMaxStrokeWidth(double maxStrokeWidth) {
+	public void setMaxStrokeWidth(float maxStrokeWidth) {
 		mMaxWidth = maxStrokeWidth;
 	}
 
